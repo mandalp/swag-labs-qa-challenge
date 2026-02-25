@@ -89,7 +89,7 @@ standard_user e problem_user
 |-----------|-------------------|
 | Produtos listados | Devem corresponder ao carrinho |
 | Quantidade | Deve refletir seleção anterior |
-| Total | Deve incluir impostos corretamente |
+| Total | Deve incluir frete corretamente |
 | Informações de pagamento | Devem estar exibidas |
 
 ---
