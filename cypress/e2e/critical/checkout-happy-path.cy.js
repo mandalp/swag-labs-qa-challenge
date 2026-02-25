@@ -11,9 +11,13 @@ describe('Critical Flow - Checkout Happy Path', () => {
   it('should complete purchase successfully', () => {
     const firstName = faker.person.firstName()
     const lastName = faker.person.lastName()
+    const numberProducts = 3
 
-    cy.addProductByIndex(0)
+    cy.addProducts(numberProducts)
+    cy.checkQuantityInCart(numberProducts)
+    
     cy.goToCart()
+    
     cy.startCheckout()
     cy.fillInformationsAndClickContinue({ first: firstName, last: lastName, postal: valid.cep })
     cy.finishCheckout()

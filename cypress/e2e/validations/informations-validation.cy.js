@@ -5,7 +5,7 @@ describe('Informations Validation', () => {
 
     beforeEach(() => {
         cy.login('standard_user')
-        cy.addProductByIndex(0)
+        cy.addProducts(1)
         cy.goToCart()
         cy.startCheckout()
     })
